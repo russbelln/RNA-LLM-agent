@@ -20,4 +20,16 @@ Este proyecto implementa un agente inteligente que, a partir de un programa de c
 ```bash
 git clone https://github.com/tu_usuario/mi_proyecto_llm.git
 cd mi_proyecto_llm
+python3 -m virtualenv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+
+## Configuración del entorno
+
+#Variables
+- GOOGLE_API_KEY=API-KEY
+
+## Ejecución
+
+```bash
+python3 src/main.py --file pentesting.pdf --use_gemini
