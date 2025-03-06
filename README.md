@@ -18,8 +18,8 @@ Este proyecto implementa un agente inteligente que, a partir de un programa de c
 ## Instalación
 
 ```bash
-git clone https://github.com/tu_usuario/mi_proyecto_llm.git
-cd mi_proyecto_llm
+git clone https://github.com/russbelln/RNA-LLM-agent.git
+cd RNA-LLM-agent
 python3 -m virtualenv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
