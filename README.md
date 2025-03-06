@@ -23,6 +23,7 @@ cd mi_proyecto_llm
 python3 -m virtualenv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
 ## Configuración del entorno
 
@@ -33,3 +34,4 @@ pip install -r requirements.txt
 
 ```bash
 python3 src/main.py --file pentesting.pdf --use_gemini
+```
