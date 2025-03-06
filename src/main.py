@@ -1,11 +1,19 @@
 import argparse
 from ingestion.parse_course import parse_course_file, extract_course_structure
 from agent.llm_agent import LLMAgent
+from markdown2 import markdown
+from utils.logger import setup_logger
+import logging
+
+
+logger = setup_logger(__name__, level=logging.DEBUG)
+
 
 def main():
     parser = argparse.ArgumentParser(description="Generar materiales educativos a partir de un programa de curso.")
     parser.add_argument("--file", type=str, required=True, help="Ruta del archivo de programa (PDF/DOCX/TXT).")
     parser.add_argument("--use_gemini", action="store_true", help="Usar gemini en lugar de un modelo local.")
+    parser.add_argument("--gemini_api_key", type=str, help="Clave de API de Gemini.")
     args = parser.parse_args()
 
     # 1) Parsear y extraer la estructura del curso
@@ -14,7 +22,7 @@ def main():
     print(f"Nombre del Curso: {course_data['nombre_curso']}")
 
     # 2) Inicializar el agente
-    agent = LLMAgent(use_gemini=args.use_gemini)
+    agent = LLMAgent(use_gemini=args.use_gemini, gemini_api_key=args.gemini_api_key)
 
     # 3) Para cada tema, generar materiales
     for topic in course_data["temas"]:

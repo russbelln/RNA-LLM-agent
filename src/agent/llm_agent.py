@@ -2,6 +2,7 @@ import os
 # Si usas archivo .env para variables de entorno
 from dotenv import load_dotenv
 import google.generativeai as genai
+from main import logger
 
 load_dotenv()
 
@@ -12,17 +13,22 @@ class LLMAgent:
         gemini_api_key: clave de API para Gemini.
         """
         self.use_gemini= use_gemini
-        genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+        self.api_key = gemini_api_key or os.environ["GOOGLE_API_KEY"]
+        genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel(model)
 
 
-    def generate_text_gemini(self, prompt: str, max_tokens: int) -> str:
+    def generate_text_gemini(self, prompt: str) -> str:
         """
-        Genera texto utilizando la nueva API ChatCompletion de gemini.
+        Genera texto utilizando la API de gemini.
         """
         response = self.model.generate_content(prompt)
 
-        # La respuesta se encuentra en response.choices[0].message.content
+        if response.finish_reason == 4:
+            logger.warning("El modelo estaba recitando material con derechos de autor.")
+            return ""
+
+
         return response.text
 
     def generate_notes(self, topic: str) -> str:
@@ -36,7 +42,7 @@ class LLMAgent:
         )
 
         if self.use_gemini:
-            return self.generate_text_gemini(prompt, max_tokens=500)
+            return self.generate_text_gemini(prompt)
 
     def generate_exercises(self, topic: str, num_exercises: int = 3) -> str:
         """
@@ -47,7 +53,7 @@ class LLMAgent:
             "con soluciones detalladas paso a paso."
         )
         if self.use_gemini:
-            return self.generate_text_gemini(prompt, max_tokens=600)
+            return self.generate_text_gemini(prompt)
 
     def generate_discussion_questions(self, topic: str, num_questions: int = 3) -> str:
         """
@@ -58,7 +64,7 @@ class LLMAgent:
             "Las preguntas deben invitar a la reflexión y el debate."
         )
         if self.use_gemini:
-            return self.generate_text_gemini(prompt, max_tokens=300)
+            return self.generate_text_gemini(prompt)
 
     def generate_learning_objectives(self, topic: str) -> str:
         """
@@ -69,7 +75,7 @@ class LLMAgent:
             "Cada objetivo debe ser medible y específico."
         )
         if self.use_gemini:
-            return self.generate_text_gemini(prompt, max_tokens=300)
+            return self.generate_text_gemini(prompt)
 
 
     def generate_resources(self, topic: str) -> str:
@@ -81,5 +87,5 @@ class LLMAgent:
             f"para complementar el tema '{topic}'."
         )
         if self.use_gemini:
-            return self.generate_text_gemini(prompt, max_tokens=200)
+            return self.generate_text_gemini(prompt)
 

@@ -2,6 +2,7 @@ import os
 from ingestion.parse_pdf import parse_pdf
 from ingestion.parse_docx import parse_docx
 from ingestion.parse_txt import parse_txt
+from main import logger
 
 def parse_course_file(file_path: str) -> str:
     """

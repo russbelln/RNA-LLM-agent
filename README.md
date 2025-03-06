@@ -25,13 +25,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Configuración del entorno
-
-#Variables
-- GOOGLE_API_KEY=API-KEY
-
 ## Ejecución
 
 ```bash
-python3 src/main.py --file pentesting.pdf --use_gemini
+python3 src/main.py --file pentesting.pdf --use_gemini --gemini_api_key API_KEY
 ```
