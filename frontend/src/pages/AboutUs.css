@@ -1,0 +1,144 @@
+
+.about-us-container{
+  margin-top: 50px;
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+  padding-left: 100px; /* Ajusta el espacio a la izquierda según sea necesario */
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.watch-video-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.about-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.source-code-button{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+/* Contenedor de los avatares */
+.avatar-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.creators-text {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.avatar-row {
+  display: flex;
+  gap: 15px;
+}
+.avatar-link {
+  text-decoration: none;
+}
+.avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.avatar-img:hover {
+  transform: scale(1.1);
+}
+.watch-video-button:hover {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Cambia este valor para ajustar el ancho */
+  max-width: 800px; /* Ajusta el tamaño máximo si es necesario */
+  aspect-ratio: 16 / 9; /* Mantén la relación de aspecto del video */
+  background: black; /* Fondo negro para el cuadro del video */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido del video no se desborde */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Añade una sombra */
+}
+
+.content {
+  max-width: 700px; /* Ajusta el ancho máximo del contenido */
+  position: relative;
+  z-index: 1;
+  text-align: left; /* Alinea el texto a la izquierda */
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  word-wrap: break-word; /* Permite que el texto se ajuste automáticamente */
+}
+
+.watch-video-button-container {
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  text-align: left; /* Alinea el botón a la izquierda */
+}
+
+.watch-video-button:hover {
+  background-color: #0056b3;
+}
+
+/* Botón para cerrar el modal */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}

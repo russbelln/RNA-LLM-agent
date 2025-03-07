@@ -1,0 +1,41 @@
+/* Contenedor general */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Ajustes del contenedor principal */
+.main-content {
+  flex: 1;
+  position: relative;
+}
+
+/* Botón Home */
+.home-button-container {
+  position: absolute;
+  top: 10px;
+  left: 50px; /* Ajuste estándar para la sidebar expandida */
+  z-index: 3;
+  transition: left 0.3s ease;
+  
+}
+
+/* Ajuste para cuando la barra lateral está colapsada */
+.sidebar-collapsed .home-button-container {
+  left: 30px;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .home-button-container {
+    left: 10px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-button-container {
+    left: 5px;
+    top: 5px;
+  }
+}

@@ -1,0 +1,182 @@
+/* Contenedor del video de fondo */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Video de fondo */
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+/* Capa de difuminado */
+.video-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: -1;
+}
+
+/* Contenido principal */
+.home-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+.content {
+  max-width: 700px; /* Ajusta el ancho máximo del contenido */
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Centra el texto */
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  word-wrap: break-word; /* Permite que el texto se ajuste automáticamente */
+}
+
+input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.ant-upload-text, .ant-upload-hint {
+  color: white; /* Asegúrate de que el texto sea visible sobre el fondo */
+  text-align: center; /* Centra el texto */
+  margin: 0; /* Elimina cualquier margen que pueda estar ocultando el texto */
+}
+
+.dragger {
+  background-color: rgba(233, 233, 233, 0); /* Fondo opaco */
+}
+
+.clear-files-button {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.clear-files-button:hover {
+  background-color: #c9302c;
+  border-color: #c9302c;
+}
+
+.response {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: #333;
+}
+
+.error {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  color: #721c24;
+}
+
+.sent-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.scrollable-content {
+  max-height: 300px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+/* Estilo del contenido en Markdown */
+.markdown-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.markdown-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.markdown-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.markdown-content p {
+  margin: 10px 0;
+}
+
+.markdown-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.markdown-content pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.markdown-content code {
+  font-family: monospace;
+  background: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.generating-text {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ant-skeleton-paragraph {
+  margin-top: 15px;
+}

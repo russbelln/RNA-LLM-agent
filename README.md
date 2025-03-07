@@ -22,11 +22,11 @@ git clone https://github.com/russbelln/RNA-LLM-agent.git
 cd RNA-LLM-agent
 python3 -m virtualenv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 ```
 
 ## Ejecución
 
 ```bash
-python3 src/main.py --file pentesting.pdf --use_gemini --gemini_api_key API_KEY
+python3 backend/src/main.py --file pentesting.pdf --use_gemini --gemini_api_key API_KEY
 ```

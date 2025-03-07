@@ -1,0 +1,35 @@
+.custom-home-button {
+    --font-selector: Q1VTVE9NO0dUIFdhbHNoZWltIEZyYW1lciBNZWRpdW0=;
+    --framer-font-family: "GT Walsheim Framer Medium", "GT Walsheim Framer Medium Placeholder", sans-serif;
+    --framer-font-open-type-features: 'kern' off;
+    --framer-font-size: 20px;
+    --framer-letter-spacing: -0.06em;
+    --framer-line-height: 0.9em;
+    --framer-text-alignment: left;
+    --framer-text-color: rgb(255, 255, 255);
+  
+    font-family: var(--framer-font-family);
+    font-size: var(--framer-font-size);
+    letter-spacing: var(--framer-letter-spacing);
+    line-height: var(--framer-line-height);
+    color: var(--framer-text-color) !important;
+    text-align: var(--framer-text-alignment);
+    background-color: transparent; /* Fondo transparente para "ghost" */
+    border: 1px solid var(--framer-text-color); /* Borde del mismo color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    gap: 8px;
+  }
+  
+  .custom-home-button:hover {
+    background-color: var(--framer-text-color);
+    color: rgb(0, 0, 0); /* Texto negro al pasar el mouse */
+  }
+
+  .custom-home-button img {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: 30px;
+  }
+  
