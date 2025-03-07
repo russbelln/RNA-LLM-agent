@@ -1,0 +1,413 @@
+{
+  "domain_keywords": [
+    "áreas.",
+    "atributo",
+    "creador",
+    "lugar",
+    "cantidad):",
+    "problema,",
+    "bancaria**",
+    "perro",
+    "**\"object-oriented",
+    "**herencia",
+    "estén",
+    "variables",
+    "**propósito:**",
+    "habla",
+    "padre).",
+    "`cuentabancaria`:**",
+    "favor",
+    "conceptos.",
+    "print(\"el",
+    "valores"
+  ],
+  "relevance_results": {
+    "Temas Principales de Programación Orientada a Objetos (POO)": {
+      "notes": {
+        "relevance_score": 1.0,
+        "distribution_score": 1.0,
+        "beginning_score": 1.0,
+        "middle_score": 1.0,
+        "end_score": 1.0,
+        "passes_threshold": true
+      },
+      "exercises": {
+        "relevance_score": 1.0,
+        "distribution_score": 1.0,
+        "beginning_score": 1.0,
+        "middle_score": 1.0,
+        "end_score": 1.0,
+        "passes_threshold": true
+      },
+      "discussion": {
+        "relevance_score": 0.65,
+        "distribution_score": 0.7945195332343675,
+        "beginning_score": 0.1,
+        "middle_score": 0.2,
+        "end_score": 0.35,
+        "passes_threshold": true
+      },
+      "objectives": {
+        "relevance_score": 1.0,
+        "distribution_score": 1.0,
+        "beginning_score": 1.0,
+        "middle_score": 1.0,
+        "end_score": 1.0,
+        "passes_threshold": true
+      },
+      "resources": {
+        "relevance_score": 1.0,
+        "distribution_score": 1.0,
+        "beginning_score": 1.0,
+        "middle_score": 1.0,
+        "end_score": 1.0,
+        "passes_threshold": true
+      }
+    }
+  },
+  "consistency_results": {
+    "topic_consistency": {
+      "Temas Principales de Programación Orientada a Objetos (POO)": {
+        "consistency_score": 0.4319088298100078,
+        "pairwise_similarities": {
+          "notes-exercises": 0.23454803951929948,
+          "notes-discussion": 0.5921596930711083,
+          "notes-objectives": 0.6880265593256157,
+          "notes-resources": 0.5429974922024118,
+          "exercises-discussion": 0.20958842534094924,
+          "exercises-objectives": 0.20566905823425577,
+          "exercises-resources": 0.18620760722950172,
+          "discussion-objectives": 0.5594049193628267,
+          "discussion-resources": 0.5855578791275304,
+          "objectives-resources": 0.5149286246865785
+        }
+      }
+    },
+    "cross_topic_consistency": {
+      "discussion": {
+        "consistency_score": 1.0
+      },
+      "objectives": {
+        "consistency_score": 1.0
+      },
+      "resources": {
+        "consistency_score": 1.0
+      },
+      "notes": {
+        "consistency_score": 1.0
+      },
+      "exercises": {
+        "consistency_score": 1.0
+      }
+    }
+  },
+  "readability_results": {
+    "Temas Principales de Programación Orientada a Objetos (POO)": {
+      "notes": {
+        "word_count": 1682,
+        "flesch_reading_ease": 67.23883921580001,
+        "avg_sentence_length": 20.51219512195122,
+        "avg_word_length": 4.184898929845422,
+        "lexical_density": 0.7110582639714625,
+        "lexical_diversity": 0.2562425683709869
+      },
+      "exercises": {
+        "word_count": 600,
+        "flesch_reading_ease": 66.50402380952382,
+        "avg_sentence_length": 21.428571428571427,
+        "avg_word_length": 4.251666666666667,
+        "lexical_density": 0.72,
+        "lexical_diversity": 0.3016666666666667
+      },
+      "discussion": {
+        "word_count": 370,
+        "flesch_reading_ease": 60.66596525096527,
+        "avg_sentence_length": 26.428571428571427,
+        "avg_word_length": 4.521621621621621,
+        "lexical_density": 0.5486486486486486,
+        "lexical_diversity": 0.42162162162162165
+      },
+      "objectives": {
+        "word_count": 732,
+        "flesch_reading_ease": 49.99900397416792,
+        "avg_sentence_length": 33.27272727272727,
+        "avg_word_length": 4.394808743169399,
+        "lexical_density": 0.6584699453551912,
+        "lexical_diversity": 0.30327868852459017
+      },
+      "resources": {
+        "word_count": 1326,
+        "flesch_reading_ease": 72.58886415608428,
+        "avg_sentence_length": 21.387096774193548,
+        "avg_word_length": 4.115384615384615,
+        "lexical_density": 0.7450980392156863,
+        "lexical_diversity": 0.2895927601809955
+      }
+    }
+  },
+  "terminology_results": {
+    "Temas Principales de Programación Orientada a Objetos (POO)": {
+      "notes": {
+        "terminology_density": 0.016057091882247992,
+        "domain_term_count": 18,
+        "total_words": 1121,
+        "unique_terms_used": 5,
+        "most_common_terms": [
+          [
+            "atributo",
+            14
+          ],
+          [
+            "lugar",
+            1
+          ],
+          [
+            "perro",
+            1
+          ],
+          [
+            "valor",
+            1
+          ],
+          [
+            "variable",
+            1
+          ]
+        ],
+        "definitions_found": [],
+        "term_consistency": {
+          "atributo": {
+            "occurrences": 14,
+            "frequency": 0.012488849241748439
+          },
+          "lugar": {
+            "occurrences": 1,
+            "frequency": 0.0008920606601248885
+          },
+          "perro": {
+            "occurrences": 1,
+            "frequency": 0.0008920606601248885
+          },
+          "valor": {
+            "occurrences": 1,
+            "frequency": 0.0008920606601248885
+          },
+          "variable": {
+            "occurrences": 1,
+            "frequency": 0.0008920606601248885
+          }
+        },
+        "terminology_score": 0.011239964317573594
+      },
+      "exercises": {
+        "terminology_density": 0.01613987895090787,
+        "domain_term_count": 24,
+        "total_words": 1487,
+        "unique_terms_used": 4,
+        "most_common_terms": [
+          [
+            "atributo",
+            11
+          ],
+          [
+            "perro",
+            9
+          ],
+          [
+            "print(\"el",
+            3
+          ],
+          [
+            "valor",
+            1
+          ]
+        ],
+        "definitions_found": [
+          {
+            "term": "El perro ladra",
+            "definition": "Guau!\""
+          },
+          {
+            "term": "El perro ladra",
+            "definition": "Guau!\")\n\nclass Gato(Animal):\n    def hacer_sonido(self):\n        print(\"El gato maulla: Miau!\")\n\ndef escuchar_animal(animal):\n    animal"
+          },
+          {
+            "term": "El perro ladra",
+            "definition": "Guau!\"\nescuchar_animal(mi_gato)   # Imprime \"El gato maulla: Miau!\"\n```\n\n**Explicación:**\n\n1"
+          }
+        ],
+        "term_consistency": {
+          "atributo": {
+            "occurrences": 11,
+            "frequency": 0.007397444519166106
+          },
+          "perro": {
+            "occurrences": 9,
+            "frequency": 0.00605245460659045
+          },
+          "print(\"el": {
+            "occurrences": 3,
+            "frequency": 0.0020174848688634837
+          },
+          "valor": {
+            "occurrences": 1,
+            "frequency": 0.0006724949562878278
+          }
+        },
+        "terminology_score": 0.1012979152656355
+      },
+      "discussion": {
+        "terminology_density": 0.003205128205128205,
+        "domain_term_count": 1,
+        "total_words": 312,
+        "unique_terms_used": 1,
+        "most_common_terms": [
+          [
+            "favor",
+            1
+          ]
+        ],
+        "definitions_found": [],
+        "term_consistency": {
+          "favor": {
+            "occurrences": 1,
+            "frequency": 0.003205128205128205
+          }
+        },
+        "terminology_score": 0.0022435897435897434
+      },
+      "objectives": {
+        "terminology_density": 0.01289134438305709,
+        "domain_term_count": 7,
+        "total_words": 543,
+        "unique_terms_used": 3,
+        "most_common_terms": [
+          [
+            "atributo",
+            5
+          ],
+          [
+            "estar",
+            1
+          ],
+          [
+            "variable",
+            1
+          ]
+        ],
+        "definitions_found": [],
+        "term_consistency": {
+          "atributo": {
+            "occurrences": 5,
+            "frequency": 0.009208103130755065
+          },
+          "estar": {
+            "occurrences": 1,
+            "frequency": 0.001841620626151013
+          },
+          "variable": {
+            "occurrences": 1,
+            "frequency": 0.001841620626151013
+          }
+        },
+        "terminology_score": 0.009023941068139963
+      },
+      "resources": {
+        "terminology_density": 0.002229654403567447,
+        "domain_term_count": 2,
+        "total_words": 897,
+        "unique_terms_used": 2,
+        "most_common_terms": [
+          [
+            "creador",
+            1
+          ],
+          [
+            "hablar",
+            1
+          ]
+        ],
+        "definitions_found": [],
+        "term_consistency": {
+          "creador": {
+            "occurrences": 1,
+            "frequency": 0.0011148272017837235
+          },
+          "hablar": {
+            "occurrences": 1,
+            "frequency": 0.0011148272017837235
+          }
+        },
+        "terminology_score": 0.0015607580824972128
+      }
+    }
+  },
+  "overall_evaluation": {
+    "topic_scores": {
+      "Temas Principales de Programación Orientada a Objetos (POO)": {
+        "content_scores": {
+          "notes": {
+            "overall_score": 0.6050885069426721,
+            "relevance_score": 1.0,
+            "readability_score": 0.6723883921580002,
+            "terminology_score": 0.011239964317573594
+          },
+          "exercises": {
+            "overall_score": 0.629901446008262,
+            "relevance_score": 1.0,
+            "readability_score": 0.6650402380952382,
+            "terminology_score": 0.1012979152656355
+          },
+          "discussion": {
+            "overall_score": 0.4426709726759728,
+            "relevance_score": 0.65,
+            "readability_score": 0.6066596525096527,
+            "terminology_score": 0.0022435897435897434
+          },
+          "objectives": {
+            "overall_score": 0.5527041942429457,
+            "relevance_score": 1.0,
+            "readability_score": 0.4999900397416792,
+            "terminology_score": 0.009023941068139963
+          },
+          "resources": {
+            "overall_score": 0.6182348198930021,
+            "relevance_score": 1.0,
+            "readability_score": 0.7258886415608429,
+            "terminology_score": 0.0015607580824972128
+          }
+        },
+        "consistency_score": 0.4319088298100078,
+        "topic_average_score": 0.569719987952571
+      }
+    },
+    "course_average": 0.569719987952571
+  },
+  "recommendations": {
+    "Temas Principales de Programación Orientada a Objetos (POO)": {
+      "notes": [
+        "Mejorar la legibilidad utilizando oraciones más cortas y vocabulario más accesible.",
+        "Incorporar más definiciones explícitas de términos clave y usar terminología de manera más consistente."
+      ],
+      "exercises": [
+        "Mejorar la legibilidad utilizando oraciones más cortas y vocabulario más accesible.",
+        "Incorporar más definiciones explícitas de términos clave y usar terminología de manera más consistente."
+      ],
+      "discussion": [
+        "Aumentar la relevancia incorporando más terminología específica del dominio.",
+        "Mejorar la legibilidad utilizando oraciones más cortas y vocabulario más accesible.",
+        "Incorporar más definiciones explícitas de términos clave y usar terminología de manera más consistente."
+      ],
+      "objectives": [
+        "Mejorar la legibilidad utilizando oraciones más cortas y vocabulario más accesible.",
+        "Incorporar más definiciones explícitas de términos clave y usar terminología de manera más consistente."
+      ],
+      "resources": [
+        "Incorporar más definiciones explícitas de términos clave y usar terminología de manera más consistente."
+      ],
+      "general": [
+        "Mejorar la consistencia entre los diferentes tipos de contenido, asegurando que utilicen terminología similar y mantengan coherencia temática."
+      ]
+    }
+  }
+}
